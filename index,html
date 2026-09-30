@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Factory 双模式 DApp</title>
+<meta property="og:url" content="https://你的github用户名.github.io/dapp-preview-page/" />
+<meta property="og:title" content="Factory 双模式 DApp" />
+<meta property="og:description" content="KMD DApp Vault" />
+<meta property="og:image" content="https://dapp-og-image.pages.dev/icon.png" />
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:image:type" content="image/png"/>
+<meta property="og:type" content="website"/>
+<!-- 0秒自动跳转到你的真实DApp地址 -->
+<meta http-equiv="refresh" content="0;url=https://factorytovault.pages.dev/">
+</head>
+<body>
+</body>
+</html>
