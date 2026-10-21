@@ -1,72 +1,65 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>TokensVault - safe 金库</title>
-    <meta name="description" content="TokensVault专为去中心化应用打造的智能合约金库，钱包支持多种链上交互与资产管理。">
-    
-    <!-- 2. 规范链接 -->
-    <link rel="canonical" href="https://vaultwallet.pages.dev/icons-head/">
-
-    <!-- 3. 网页图标与移动端图标 -->
-    <link rel="icon" type="image/png" sizes="256x256" href="https://vaultwallet.pages.dev/icons-head/tokensvault256.png">
-    <link rel="icon" type="image/svg+xml" href="https://vaultwallet.pages.dev/icons-head/tokensvault.svg">
-    <!--  iOS 桌面图标 -->
-    <link rel="apple-touch-icon" sizes="180x180" href="https://vaultwallet.pages.dev/icons-head/tokensvault256.png">
-    <!-- 移动端浏览器主题色 -->
-    <meta name="theme-color" content="#214ed0">
-
-    <!-- ================= 4. 社交分享 OG 标签 ================= -->
-    <meta property="og:url" content="https://vaultwallet.pages.dev/icons-head/">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="TokensVault - Safe Vault">
-    <meta property="og:description" content="专为去中心化应用打造的链上智能合约钱包。">
-    <!-- 补充了站点名称和语言 -->
-    <meta property="og:site_name" content="Safe Vault">
-    <meta property="og:locale" content="zh_CN">
-
-    <!-- 🥇 第一张：1200x630 横图（主力，微信/推特/TP最认这个） -->
-    <meta property="og:image" content="https://vaultwallet.pages.dev/icons-head/tokensvault1200and630.png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:image:type" content="image/png">
-    <!-- 补充了图片替代文本 -->
-    <meta property="og:image:alt" content="Vault Logo">
-
-    <!-- 🥈 第二张：1024x1024 方图 -->
-    <meta property="og:image" content="https://vaultwallet.pages.dev/icons-head/tokensvault1024.png">
-    <meta property="og:image:width" content="1024">
-    <meta property="og:image:height" content="1024">
-    <meta property="og:image:type" content="image/png">
-
-    <!-- 🥉 第三张：512x512 -->
-    <meta property="og:image" content="https://vaultwallet.pages.dev/icons-head/tokensvault512.png">
-    <meta property="og:image:width" content="512">
-    <meta property="og:image:height" content="512">
-    <meta property="og:image:type" content="image/png">
-
-    <!-- 第四张：256x256 -->
-    <meta property="og:image" content="https://vaultwallet.pages.dev/icons-head/tokensvault256.png">
-    <meta property="og:image:width" content="256">
-    <meta property="og:image:height" content="256">
-    <meta property="og:image:type" content="image/png">
-
-    <!-- 第五张：200x200（兜底） -->
-    <meta property="og:image" content="https://vaultwallet.pages.dev/icons-head/tokensvault200.png">
-    <meta property="og:image:width" content="200">
-    <meta property="og:image:height" content="200">
-    <meta property="og:image:type" content="image/png">
-
-    <!-- ================= 5. Twitter (X) 专属抓取  ================= -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="TokensVault - Safe Vault">
-    <meta name="twitter:description" content="专为去中心化应用打造的链上智能合约钱包。">
-    <meta name="twitter:image" content="https://vaultwallet.pages.dev/icons-head/tokensvault1200and630.png">
-
-    
+<meta charset="UTF-8">
+<title>终极数据对比验证</title>
+<script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
 </head>
-<body>
-<p>正在进入DApp...</p>
+<body style="padding: 20px; font-family: sans-serif;">
+
+  <h2>🎯 用截图上的真实数据验证</h2>
+  <div style="background: #f0f0f0; padding: 10px; border-radius: 8px; font-family: monospace; margin-bottom: 20px;">
+    <p>工厂: 0x1fa899b75e09d1cda537dee93a4ee7d2c26fbc4c</p>
+    <p>模板: 0xeBFA119a6dde5DFb840B5F8668Cb5C05F8A012a1</p>
+    <p>盐值: 0x2F640B</p>
+  </div>
+
+  <button id="testBtn" style="padding: 10px 20px; font-size: 16px; cursor: pointer;">点击计算真实地址</button>
+
+  <div id="result" style="margin-top: 20px; padding: 15px; border: 2px solid #007bff; border-radius: 8px; font-family: monospace; font-size: 18px;">
+    等待计算...
+  </div>
+
+<script>
+// 这是你提供的字节码
+const BYTECODE = "0x608060405260405161083838038061083883398181016040528101906100259190610501565b61003682825f61003d60201b60201c565b505061071d565b61004c8361007460201b60201c565b5f825111806100585750805b1561006f5761006d83836100c960201b60201c565b505b505050565b610083816100fc60201b60201c565b8073ffffffffffffffffffffffffffffffffffffffff167fbc7cd75a20ee27fd9adebab32041f755214dbc6bffa90cc0225b39da2e5c2d3b60405160405180910390a250565b60606100f48383604051806060016040528060278152602001610811602791396101be60201b60201c565b905092915050565b61010b8161024660201b60201c565b61014a576040517f08c379a0000000000000000000000000000000000000000000000000000000008152600401610141906105db565b60405180910390fd5b8061017c7f360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc5f1b61026860201b60201c565b5f015f6101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555050565b60605f808573ffffffffffffffffffffffffffffffffffffffff16856040516101e7919061063d565b5f60405180830381855af49150503d805f811461021f576040519150601f19603f3d011682016040523d82523d5f602084013e610224565b606091505b509150915061023b8683838761027160201b60201c565b925050509392505050565b5f808273ffffffffffffffffffffffffffffffffffffffff163b119050919050565b5f819050919050565b606083156102d8575f8351036102d0576102908561024660201b60201c565b6102cf576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004016102c69061069d565b60405180910390fd5b5b8290506102e9565b6102e883836102f160201b60201c565b5b949350505050565b5f825111156103035781518083602001fd5b806040517f08c379a000000000000000000000000000000000000000000000000000000000815260040161033791906106fd565b60405180910390fd5b5f604051905090565b5f80fd5b5f80fd5b5f73ffffffffffffffffffffffffffffffffffffffff82169050919050565b5f61037a82610351565b9050919050565b61038a81610370565b8114610394575f80fd5b50565b5f815190506103a581610381565b92915050565b5f80fd5b5f80fd5b5f601f19601f8301169050919050565b7f4e487b71000000000000000000000000000000000000000000000000000000005f52604160045260245ffd5b6103f9826103b3565b810181811067ffffffffffffffff82111715610418576104176103c3565b5b80604052505050565b5f61042a610340565b905061043682826103f0565b919050565b5f67ffffffffffffffff821115610455576104546103c3565b5b61045e826103b3565b9050602081019050919050565b5f5b8381101561048857808201518184015260208101905061046d565b5f8484015250505050565b5f6104a56104a08461043b565b610421565b9050828152602081018484840111156104c1576104c06103af565b5b6104cc84828561046b565b509392505050565b5f82601f8301126104e8576104e76103ab565b5b81516104f8848260208601610493565b91505092915050565b5f806040838503121561051757610516610349565b5b5f61052485828601610397565b925050602083015167ffffffffffffffff11156105455761054461034d565b5b610551858286016104d4565b9150509250929050565b5f82825260208201905092915050565b7f455243313936373a206e657720696d706c656d656e746174696f6e206973206e5f8201527f6f74206120636f6e747261637400000000000000000000000000000000000000602082015250565b5f6105c5602d8361055b565b91506105d08261056b565b604082019050919050565b5f6020820190508181035f8301526105f2816105b9565b9050919050565b5f81519050919050565b5f81905092915050565b5f610617826105f9565b6106218185610603565b935061063181856020860161046b565b80840191505092915050565b5f610648828461060d565b915081905092915050565b7f416464726573733a2063616c6c20746f206e6f6e2d636f6e74726163740000005f82015250565b5f610687601d8361055b565b915061069282610653565b602082019050919050565b5f6020820190508181035f8301526106b48161067b565b9050919050565b5f81519050919050565b5f6106cf826106bb565b6106d9818561055b565b93506106e981856020860161046b565b6106f2816103b3565b840191505092915050565b5f6020820190508181035f83015261071581846106c5565b905092915050565b60e8806107295f395ff3fe608060405236601057600e6018565b005b60166018565b005b601e602c565b602a6026602e565b603a565b565b565b5f60356058565b905090565b365f80375f80365f845af43d5f803e805f81146054573d5ff35b3d5ffd5b5f60827f360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc5f1b60a9565b5f015f9054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905090565b5f81905091905056fea2646970667358221220670d3127a6f3bd1df47e047d5e4f84258bcd7d32b7dae83c3e769f22aaa6568364736f6c63430008140033416464726573733a206c6f772d6c6576656c2064656c65676174652063616c6c206661696c6564";
+
+document.getElementById('testBtn').addEventListener('click', () => {
+    const factory = "0x1fa899b75e09d1cda537dee93a4ee7d2c26fbc4c";
+    const template = "0xeBFA119a6dde5DFb840B5F8668Cb5C05F8A012a1";
+    const salt = "0x2F640B"; // 截图里的真实盐值
+
+    try {
+        // 1. 补齐盐值
+        const saltHex = ethers.utils.hexZeroPad(ethers.BigNumber.from(salt).toHexString(), 32);
+        
+        // 2. 构造 initCode
+        const constructorArgs = ethers.utils.defaultAbiCoder.encode(["address", "bytes"], [template, "0x"]);
+        const initCode = ethers.utils.hexConcat([BYTECODE, constructorArgs]);
+        const initCodeHash = ethers.utils.keccak256(initCode);
+        
+        // 3. 计算地址
+        const calculatedAddr = ethers.utils.getCreate2Address(factory, saltHex, initCodeHash);
+        
+        // 4. 显示结果
+        const expectedAddr = "0xFbBD26319a500f07711C1fDAd9283aA9C6590090";
+        
+        let html = `
+            <p>算出的地址: <b>${calculatedAddr}</b></p>
+            <p>截图上的地址: <b>${expectedAddr}</b></p>
+        `;
+
+        if (calculatedAddr.toLowerCase() === expectedAddr.toLowerCase()) {
+            html += `<h3 style="color: green;">✅ 完全一致！说明数学公式是对的，你之前绝对是填错参数了。</h3>`;
+        } else {
+            html += `<h3 style="color: red;">❌ 不一致！这说明你给我发的这段字节码，不是你实际部署中转工厂时用的那个版本。</h3>`;
+        }
+        
+        document.getElementById('result').innerHTML = html;
+    } catch(e) {
+        document.getElementById('result').innerText = "计算错误: " + e.message;
+    }
+});
+</script>
 </body>
 </html>
